@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Lugrasimo&family=Ramaraja&family=Roboto+Slab:wght@100..900&family=WindSong:wght@400;500&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: roboto slab;
+}
+
+body {
+    position: relative;
+    display: flex;
+    background-image: url(/itens/gifs/jeff-buckley.gif);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    justify-content: start;
+    align-items: center;
+
+    & h1 {
+        cursor: context-menu;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-family: ballet;
+        word-spacing: 10px;
+        text-decoration: underline;
+    }
+}
+
+.container {
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    padding: 30px 70px 30px 70px;
+    border: 3px solid rgba(79, 79, 79, 0.500);
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+}
+
+form {
+
+    & h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        cursor: context-menu;
+        color: white;
+    }
+
+    div {
+        position: relative;
+
+        &.anm input.campo {
+            border-radius: 15px;
+            width: 100%;
+            background-color: rgba(200, 200, 200, 0.800);
+            border: 3px solid rgba(200, 200, 200, 0.900);
+            height: 40px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 10px 35px 10px 7px;
+        }
+
+        &.anm label.plc {
+            position: absolute;
+            top: 25px;
+            left: 8px;
+            font-size: 14px;
+            transition: .2s ease;
+            color: rgb(255, 255, 255);
+        }
+
+        &.anm input.campo:focus+label.plc,
+        &.anm input.campo:not(:placeholder-shown)+label.plc {
+            position: absolute;
+            transform: translateY(-34px);
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.93);
+        }
+
+        & i {
+            color: rgba(255, 255, 255, 0.693);
+            position: absolute;
+            top: 27px;
+            right: 15px;
+        }
+
+        &.remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px -30px 20px -30px;
+            color: white;
+
+            & label input.ck {
+                margin-right: 2.5px;
+            }
+
+        }
+
+        &.reg {
+            color: white;
+            cursor: context-menu;
+        }
+
+        & a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 15.5px;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+    }
+
+    & button {
+        padding: 10px 70px;
+        border-radius: 20px;
+        background-color: rgba(200, 200, 200, 0.500);
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        border: 3px solid rgba(200, 200, 200, 0.500);
+        width: 100%;
+        margin-bottom: 25px;
+        margin-top: 15px;
+
+        &:hover {
+            background-color: rgba(77, 77, 77, 0.5);
+            color: rgb(255, 255, 255);
+        }
+
+    }
+
+}
