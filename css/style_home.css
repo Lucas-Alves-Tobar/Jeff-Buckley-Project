@@ -20,7 +20,7 @@ header.header {
     & h1 {
         padding: 10px;
         font-family: ballet;
-        color: white;
+        color: rgb(223, 221, 255);
         word-spacing: 10px;
         text-decoration: underline;
         cursor: context-menu;
