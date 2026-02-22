@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(80, 80, 80);
+}
+
 header.header {
     border-top: 10px solid rgb(13, 13, 13);
     border-bottom: 10px solid rgb(13, 13, 13);
@@ -69,5 +73,63 @@ header.header {
                 }
             }
         }
+    }
+}
+
+section.bio {
+    display: flex;
+    background-color: rgba(12, 12, 20, 0.900);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60vh;
+    gap: 50px;
+
+    & img {
+        width: 280px;
+        border-radius: 10px;
+    }
+
+    & div.jeff-short-bio {
+        display: flex;
+        min-height: 40vh;
+        color: white;
+        display: block;
+        background-color: transparent;
+        width: 600px;
+        gap: 20px;
+
+        & h2 {
+            text-decoration: underline;
+            font-size: 35px;
+            color: rgb(223, 221, 255);
+            margin-bottom: 30px;
+        }
+
+        & p {
+            color: rgb(211, 211, 233);
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        & button {
+            background-color: rgb(211, 211, 233);
+            padding: 12px 35px;
+            border: 2px solid rgb(104, 115, 174);
+            border-radius: 15px;
+            color: rgb(13, 13, 13);
+            font-size: 18px;
+            transition: 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+                background-color: rgb(104, 115, 174);
+                color: rgb(255, 255, 255);
+                border: 2px solid rgb(211, 211, 233);
+                font-weight: bolder;
+            }
+        }
+
     }
 }
