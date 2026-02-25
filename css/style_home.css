@@ -13,7 +13,7 @@ body {
 header.header {
     border-top: 10px solid rgb(13, 13, 13);
     border-bottom: 10px solid rgb(13, 13, 13);
-    background-color: rgb(22, 22, 42);
+    background-color: rgb(15, 15, 27);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,62 @@ header.header {
         cursor: context-menu;
     }
 
+    & div.search {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0);
+        width: 500px;
+        min-height: 50px;
+        justify-content: center;
+        gap: 10px;
+
+        & input::placeholder {
+            color: rgba(223, 221, 255);
+        }
+
+        & input {
+            font-family: poppins;
+            font-size: 17px;
+            color: rgb(223, 221, 255);
+            outline: none;
+            padding: 10px;
+            caret-color: rgb(0, 0, 0);
+            min-height: 90%;
+            width: 40%;
+            border: 3px solid rgb(223, 221, 255);
+            border-radius: 15px;
+            background-color: rgba(42, 30, 76, 0.5);
+            transition: 0.1s ease;
+
+            &:focus {
+                background-color: rgb(223, 221, 255);
+                transform: scale(1.05);
+                color: rgb(22, 22, 42);
+
+            }
+        }
+
+        & button {
+            font-family: poppins;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 8px;
+            border: 3px solid rgb(223, 221, 255);
+            border-radius: 15px;
+            background-color: rgba(42, 30, 76, 0.5);
+            transition: 0.1s ease;
+
+            &:hover {
+                color: rgb(17, 17, 59);
+                background-color: rgb(223, 221, 255);
+                transform: scale(1.05);
+            }
+        }
+    }
+
     & nav {
+        min-width: 190px;
+        margin-left: 10px;
         margin-right: 10px;
         background-color: transparent;
         position: relative;
