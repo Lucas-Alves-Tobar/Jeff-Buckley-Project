@@ -79,9 +79,20 @@ section.bio {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 60vh;
-    gap: 50px;
-    padding: 20px;
+    min-height: 63vh;
+    border-bottom: 8px solid rgb(13, 13, 13);
+
+    & span.fundo {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.62);
+        border-radius: 15px;
+        width: 90%;
+        min-height: 50vh;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
 
     & img {
         width: 280px;
