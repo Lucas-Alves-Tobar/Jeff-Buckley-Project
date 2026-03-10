@@ -75,7 +75,7 @@ header.header {
 
 section.bio {
     display: flex;
-    background-color: rgba(12, 12, 20, 0.900);
+    background-color: rgba(6, 6, 13, 0.9);
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -147,24 +147,36 @@ section.bio {
 }
 
 section.disco {
-    display: inline-flexbox;
+    display: flex;
     min-height: 70vh;
-    background-color: rgb(9, 9, 26);
+    background-color: rgb(3, 3, 10);
     justify-items: center;
+    align-items: center;
     padding: 30px;
+    min-width: 100%;
+
+    & span.fundo1 {
+        display: inline-flexbox;
+        border-radius: 25px;
+        padding: 20px;
+        background-color: rgba(85, 88, 235, 0.05);
+        min-height: 65vh;
+        min-width: 90%;
+        justify-items: center;
+    }
 
     & h2 {
         word-spacing: 4px;
         font-family: windsong;
         font-size: 35px;
         color: rgb(211, 211, 233);
-        padding-bottom: 30px;
         text-align: center;
+        padding-bottom: 15px;
     }
 
     & div.roll {
         display: flex;
-        width: 90%;
+        width: 95%;
         align-items: center;
 
         & button.btn {
@@ -186,7 +198,7 @@ section.disco {
 
         & div.carrossel {
             border-radius: 30px;
-            background-color: rgb(33, 32, 65);
+            background-color: rgb(7, 6, 9);
             display: flex;
             overflow-x: auto;
             scroll-behavior: smooth;
@@ -203,11 +215,10 @@ section.disco {
                 justify-content: space-between;
                 min-width: 200px;
                 height: 360px;
-                background: #c5b5ff;
-                border-radius: 8px;
+                background: rgba(249, 247, 255, 0.701);
+                border-radius: 15px;
                 margin: 20px;
                 padding: 10px;
-                border: 5px solid rgb(9, 9, 26);
 
                 & div.cover {
                     border: 2px solid rgba(0, 0, 0, 0.63);
@@ -222,21 +233,22 @@ section.disco {
                     text-align: center;
                     font-family: rubik;
                     font-size: 15px;
-                    color: rgb(5, 0, 21);
+                    font-weight: 550;
+                    color: rgb(5, 0, 9);
                 }
 
                 & button {
                     font-family: roboto slab;
                     padding: 10px;
-                    background-color: rgb(199, 156, 254);
-                    color: rgb(6, 1, 33);
+                    background-color: rgb(211, 211, 233);
+                    color: rgb(0, 0, 0);
                     font-weight: bolder;
-                    border: 3px solid rgb(143, 125, 190);
+                    border: 3px solid rgb(10, 10, 11);
                     border-radius: 8px;
                     transition: 0.1s ease;
 
                     &:hover {
-                        background-color: rgb(134, 107, 209);
+                        background-color: rgb(10, 10, 11);
                         transform: scale(1.05);
                         color: rgb(255, 255, 255);
                     }
