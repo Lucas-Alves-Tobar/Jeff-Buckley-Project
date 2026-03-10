@@ -159,7 +159,7 @@ section.disco {
         display: inline-flexbox;
         border-radius: 25px;
         padding: 20px;
-        background-color: rgba(85, 88, 235, 0.05);
+        background-color: rgba(85, 88, 235, 0.051);
         min-height: 65vh;
         min-width: 90%;
         justify-items: center;
@@ -176,29 +176,30 @@ section.disco {
 
     & div.roll {
         display: flex;
-        width: 95%;
+        width: 99%;
         align-items: center;
 
         & button.btn {
-            color: white;
+            color: rgb(0, 0, 0);
             font-weight: bolder;
-            border: 3px solid rgb(199, 156, 254);
+            border: 3px solid rgb(186, 186, 186);
             border-radius: 15px;
-            background-color: rgb(134, 107, 209);
+            background-color: rgb(186, 186, 186);
             padding: 55px 15px;
             margin: 30px;
             transition: 0.1s ease;
 
             &:hover {
                 cursor: pointer;
-                background-color: rgb(199, 156, 254);
+                background-color: rgba(85, 88, 235, 0.018);
                 transform: scale(1.05);
+                color: white;
             }
         }
 
         & div.carrossel {
-            border-radius: 30px;
-            background-color: rgb(7, 6, 9);
+            border-radius: 15px;
+            background-color: transparent;
             display: flex;
             overflow-x: auto;
             scroll-behavior: smooth;
@@ -209,55 +210,58 @@ section.disco {
             }
 
 
-            & div.card {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                min-width: 200px;
-                height: 360px;
-                background: rgba(249, 247, 255, 0.701);
-                border-radius: 15px;
-                margin: 20px;
-                padding: 10px;
+            & a {
+                text-decoration: none;
 
-                & div.cover {
-                    border: 2px solid rgba(0, 0, 0, 0.63);
-                    border-radius: 8px;
-                    width: 100%;
-                    height: 200px;
-                    background-size: cover;
-                    background-position: center;
-                }
 
-                & h3 {
-                    text-align: center;
-                    font-family: rubik;
-                    font-size: 15px;
-                    font-weight: 550;
-                    color: rgb(5, 0, 9);
-                }
+                & div.card {
+                    transition: 0.15s ease;
+                    display: inline-flexbox;
+                    justify-content: space-between;
+                    min-width: 200px;
+                    height: 295px;
+                    background: rgb(2, 2, 5);
+                    border-radius: 15px;
+                    margin: 20px;
+                    margin-right: 5px;
+                    padding: 5px;
+                    border: 2px solid transparent;
 
-                & button {
-                    font-family: roboto slab;
-                    padding: 10px;
-                    background-color: rgb(211, 211, 233);
-                    color: rgb(0, 0, 0);
-                    font-weight: bolder;
-                    border: 3px solid rgb(10, 10, 11);
-                    border-radius: 8px;
-                    transition: 0.1s ease;
+                    & div.cover {
+                        border-radius: 15px;
+                        width: 100%;
+                        height: 200px;
+                        background-size: cover;
+                        background-position: center;
+                        border: 3px solid black;
+                    }
+
+                    & h3 {
+                        margin-top: 5px;
+                        text-align: center;
+                        font-family: rubik;
+                        font-size: 15px;
+                        font-weight: 520;
+                        color: rgb(223, 221, 255);
+                    }
 
                     &:hover {
-                        background-color: rgb(10, 10, 11);
-                        transform: scale(1.05);
-                        color: rgb(255, 255, 255);
+                        transform: scale(1.130);
+                        background-color: rgb(211, 211, 233);
+                        border: 3px solid rgb(2, 2, 5);
+
+                        & h3 {
+                            color: rgb(2, 2, 5);
+                        }
                     }
                 }
+
 
             }
         }
     }
 }
+
 
 footer.footer {
     background-color: rgb(2, 2, 5);
@@ -309,7 +313,7 @@ footer.footer {
             }
 
             & input {
-                border: 3px solid rgb(129, 116, 204);
+                border: 3px solid rgb(207, 205, 233);
                 border-radius: 8px;
                 display: block;
                 background-color: rgb(226, 226, 232);
