@@ -11,13 +11,12 @@ body {
 }
 
 header.header {
-    border-top: 10px solid rgb(13, 13, 13);
-    border-bottom: 10px solid rgb(13, 13, 13);
-    background-color: rgb(15, 15, 27);
+    background-color: rgb(8, 8, 10);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-bottom: 3px solid rgba(223, 221, 255, 0.039);
 
     & h1 {
         margin-left: 5px;
@@ -75,16 +74,15 @@ header.header {
 
 section.bio {
     display: flex;
-    background-color: rgba(6, 6, 13, 0.9);
+    background: linear-gradient(to bottom, rgb(9, 9, 11), rgb(13, 10, 21), rgb(16, 14, 22), rgb(2, 1, 6));
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 63vh;
-    border-bottom: 8px solid rgb(13, 13, 13);
 
     & span.fundo {
         display: flex;
-        background-color: rgba(0, 0, 0, 0.62);
+        background: linear-gradient(to top, rgb(16, 14, 22), rgb(10, 7, 14), rgb(22, 18, 29));
         border-radius: 15px;
         width: 90%;
         min-height: 50vh;
@@ -136,7 +134,7 @@ section.bio {
             &:hover {
                 transform: scale(1.05);
                 cursor: pointer;
-                background-color: rgb(104, 115, 174);
+                background-color: rgb(21, 26, 54);
                 color: rgb(255, 255, 255);
                 border: 2px solid rgb(211, 211, 233);
                 font-weight: bolder;
@@ -149,7 +147,7 @@ section.bio {
 section.disco {
     display: flex;
     min-height: 70vh;
-    background-color: rgb(3, 3, 10);
+    background: linear-gradient(to bottom, rgb(2, 1, 6), rgb(16, 14, 22), rgb(2, 1, 6));
     justify-items: center;
     align-items: center;
     padding: 30px;
@@ -159,10 +157,11 @@ section.disco {
         display: inline-flexbox;
         border-radius: 25px;
         padding: 20px;
-        background-color: rgba(85, 88, 235, 0.051);
+        background: linear-gradient(to top, rgb(7, 7, 16), rgb(29, 20, 36), rgb(16, 13, 16));
         min-height: 65vh;
         min-width: 90%;
         justify-items: center;
+        box-shadow: 10px 10px 20px 8px rgba(0, 0, 0, 0.5);
     }
 
     & h2 {
@@ -180,20 +179,20 @@ section.disco {
         align-items: center;
 
         & button.btn {
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             font-weight: bolder;
-            border: 3px solid rgb(186, 186, 186);
+            border: 3px solid rgb(7, 7, 16);
             border-radius: 15px;
-            background-color: rgb(186, 186, 186);
+            background-color: rgb(7, 7, 16);
             padding: 55px 15px;
             margin: 30px;
             transition: 0.1s ease;
 
             &:hover {
                 cursor: pointer;
-                background-color: rgba(85, 88, 235, 0.018);
+                background-color: rgba(255, 255, 255, 0.839);
                 transform: scale(1.05);
-                color: white;
+                color: rgb(7, 7, 16);
             }
         }
 
@@ -220,20 +219,20 @@ section.disco {
                     justify-content: space-between;
                     min-width: 200px;
                     height: 295px;
-                    background: rgb(2, 2, 5);
+                    background: rgba(0, 0, 0, 0.577);
                     border-radius: 15px;
-                    margin: 20px;
+                    margin: 30px;
                     margin-right: 5px;
                     padding: 5px;
                     border: 2px solid transparent;
 
                     & div.cover {
-                        border-radius: 15px;
+                        border-radius: 10px;
                         width: 100%;
                         height: 200px;
                         background-size: cover;
                         background-position: center;
-                        border: 3px solid black;
+                        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
                     }
 
                     & h3 {
@@ -248,7 +247,6 @@ section.disco {
                     &:hover {
                         transform: scale(1.130);
                         background-color: rgb(211, 211, 233);
-                        border: 3px solid rgb(2, 2, 5);
 
                         & h3 {
                             color: rgb(2, 2, 5);
@@ -262,13 +260,11 @@ section.disco {
     }
 }
 
-
 footer.footer {
     background-color: rgb(2, 2, 5);
     width: 100%;
     min-height: 35vh;
-    border-top: 8px solid;
-    border-bottom: 8px solid;
+    border-top: 3px solid rgba(255, 255, 255, 0.038);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -283,7 +279,7 @@ footer.footer {
 
             & h2 {
                 font-size: 30px;
-                color: cadetblue;
+                color: rgb(102, 127, 128);
             }
 
             & a {
@@ -308,7 +304,7 @@ footer.footer {
 
             & h2 {
                 display: block;
-                color: cadetblue;
+                color: rgb(91, 134, 135);
                 font-size: 38px;
             }
 
