@@ -3,7 +3,7 @@ const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 
 next.addEventListener('click', () => {
-    carrossel.scrollLeft += 725;
+    carrossel.scrollLeft += 710;
 });
 
 prev.addEventListener('click', () => {

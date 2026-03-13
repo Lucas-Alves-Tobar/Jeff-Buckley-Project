@@ -81,7 +81,9 @@ section.bio {
     min-height: 63vh;
 
     & span.fundo {
+        margin-top: 10px;
         display: flex;
+        flex-direction: row;
         background: linear-gradient(to top, rgb(16, 14, 22), rgb(10, 7, 14), rgb(22, 18, 29));
         border-radius: 15px;
         width: 90%;
@@ -90,57 +92,62 @@ section.bio {
         justify-content: center;
         align-items: center;
         padding: 20px;
-    }
 
-    & img {
-        width: 280px;
-        border-radius: 10px;
-    }
 
-    & div.jeff-short-bio {
-        display: flex;
-        min-height: 40vh;
-        color: white;
-        display: block;
-        background-color: transparent;
-        width: 600px;
-        gap: 20px;
-
-        & h2 {
-            word-spacing: 4px;
-            font-family: windsong;
-            font-size: 35px;
-            color: rgb(211, 211, 233);
-            margin-bottom: 30px;
+        & img {
+            width: 280px;
+            border-radius: 10px;
         }
 
-        & p {
-            color: rgb(211, 211, 233);
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
+        & div.jeff-short-bio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 40vh;
+            color: white;
+            background-color: transparent;
+            max-width: 600px;
 
-        & button {
-            font-family: roboto slab;
-            background-color: rgb(211, 211, 233);
-            padding: 12px 35px;
-            border: 2px solid rgb(104, 115, 174);
-            border-radius: 15px;
-            color: rgb(13, 13, 13);
-            font-size: 18px;
-            transition: 0.1s ease;
-            font-weight: bolder;
-
-            &:hover {
-                transform: scale(1.05);
-                cursor: pointer;
-                background-color: rgb(21, 26, 54);
-                color: rgb(255, 255, 255);
-                border: 2px solid rgb(211, 211, 233);
-                font-weight: bolder;
+            & h2 {
+                text-align: center;
+                word-spacing: 4px;
+                font-family: windsong;
+                font-size: 35px;
+                color: rgb(211, 211, 233);
+                margin-bottom: 30px;
             }
-        }
 
+            & p {
+                text-align: justify;
+                color: rgb(211, 211, 233);
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+
+            & button {
+                height: 50px;
+                width: 150px;
+                font-family: roboto slab;
+                background: linear-gradient(to bottom, rgb(149, 149, 189), rgb(211, 211, 233), rgb(149, 149, 189));
+                border: 2px solid rgb(69, 89, 201);
+                border-radius: 15px;
+                color: rgb(13, 13, 13);
+                font-size: 18px;
+                transition: 0.1s ease;
+                font-weight: bolder;
+
+                &:hover {
+                    transform: scale(1.05);
+                    cursor: pointer;
+                    background: linear-gradient(to bottom, rgb(15, 19, 40));
+                    color: rgb(255, 255, 255);
+                    border: 2px solid rgb(211, 211, 233);
+                    font-weight: bolder;
+                }
+            }
+
+        }
     }
 }
 
@@ -175,7 +182,7 @@ section.disco {
 
     & div.roll {
         display: flex;
-        width: 99%;
+        width: 97vw;
         align-items: center;
 
         & button.btn {
@@ -198,7 +205,9 @@ section.disco {
 
         & div.carrossel {
             border-radius: 15px;
-            background-color: transparent;
+            border-right: 10px solid rgb(6, 1, 10);
+            border-left: 10px solid rgb(6, 1, 10);
+            background: linear-gradient(to right, rgb(6, 1, 10), rgb(23, 21, 29), rgb(6, 1, 10));
             display: flex;
             overflow-x: auto;
             scroll-behavior: smooth;
@@ -335,6 +344,61 @@ footer.footer {
                     color: rgb(22, 32, 91);
                 }
             }
+        }
+    }
+
+    & div#soc {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header.header {
+        justify-content: center;
+
+        & nav {
+            display: none;
+        }
+    }
+
+    section.bio {
+        & span.fundo {
+            flex-direction: column;
+        }
+
+        & div.jeff-short-bio {
+            align-content: center;
+            overflow-wrap: break-word;
+        }
+    }
+
+    section.disco {
+        min-height: 0;
+
+        & span.fundo1 {
+            min-height: 0vh;
+        }
+
+        & div.roll {
+            max-width: 100%;
+
+            & .btn {
+                display: none;
+            }
+        }
+    }
+
+    footer.footer {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: justify;
+
+        & div {
+            margin-left: 30px;
+        }
+
+        & div#soc {
+            display: block;
         }
     }
 }
