@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Ballet:opsz@16..72&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=WindSong:wght@400;500&display=swap');
 
 * {
     padding: 0;
@@ -8,6 +8,7 @@
 
 body {
     background-color: rgb(80, 80, 80);
+    font-family: Aboreto;
 }
 
 header.header {
@@ -17,14 +18,16 @@ header.header {
     align-items: center;
     width: 100%;
     border-bottom: 3px solid rgba(223, 221, 255, 0.039);
+    padding: 15px;
 
     & h1 {
         margin-left: 5px;
         padding: 10px;
-        font-family: ballet;
+        font-weight: 100;
+        font-family: Aboreto;
         color: rgb(223, 221, 255);
         word-spacing: 10px;
-        text-decoration: underline;
+        text-decoration: none;
         cursor: context-menu;
     }
 
@@ -41,7 +44,7 @@ header.header {
         & .divisoria {
             background-color: rgb(223, 221, 255);
             width: 2px;
-            height: 99px;
+            height: 60px;
         }
 
         & ul.menu {
@@ -49,19 +52,20 @@ header.header {
             justify-content: center;
             background-color: transparent;
             flex-wrap: wrap;
-            display: block;
-            padding: 1px;
+            display: flex;
+            padding: 5px;
             margin-left: 4px;
 
             & li {
-                padding: 5px;
+                padding: 7.5px;
 
                 & a,
                 i {
                     margin: 5px;
                     text-decoration: none;
                     color: rgb(223, 221, 255);
-                    font-size: 20px;
+                    font-size: 17px;
+                    font-weight: 600;
 
                     &:hover {
                         text-decoration: underline;
@@ -84,7 +88,7 @@ section.bio {
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        background: linear-gradient(to top, rgb(16, 14, 22), rgb(10, 7, 14), rgb(22, 18, 29));
+        background: linear-gradient(180deg, rgb(16, 14, 22), rgb(10, 7, 14), rgb(22, 18, 29));
         border-radius: 15px;
         width: 90%;
         min-height: 50vh;
@@ -113,16 +117,19 @@ section.bio {
                 text-align: center;
                 word-spacing: 4px;
                 font-family: windsong;
+                font-weight: 500;
                 font-size: 35px;
                 color: rgb(211, 211, 233);
                 margin-bottom: 30px;
             }
 
             & p {
+                font-weight: 500;
                 text-align: justify;
                 color: rgb(211, 211, 233);
                 font-size: 20px;
                 margin-bottom: 30px;
+                font-family: Cormorant Infant;
             }
 
             & button {
@@ -130,20 +137,20 @@ section.bio {
                 width: 150px;
                 font-family: roboto slab;
                 background: linear-gradient(to bottom, rgb(149, 149, 189), rgb(211, 211, 233), rgb(149, 149, 189));
-                border: 2px solid rgb(69, 89, 201);
+                border: 0;
                 border-radius: 15px;
                 color: rgb(13, 13, 13);
                 font-size: 18px;
                 transition: 0.1s ease;
-                font-weight: bolder;
+                font-weight: 450;
 
                 &:hover {
                     transform: scale(1.05);
                     cursor: pointer;
-                    background: linear-gradient(to bottom, rgb(15, 19, 40));
+                    background: linear-gradient(to bottom, rgba(7, 9, 21, 0), rgb(23, 17, 34), rgba(7, 9, 21, 0));
                     color: rgb(255, 255, 255);
-                    border: 2px solid rgb(211, 211, 233);
-                    font-weight: bolder;
+                    border: 1.5px solid rgb(211, 211, 233);
+                    font-weight: 400;
                 }
             }
 
@@ -164,7 +171,7 @@ section.disco {
         display: inline-flexbox;
         border-radius: 25px;
         padding: 20px;
-        background: linear-gradient(to top, rgb(7, 7, 16), rgb(29, 20, 36), rgb(16, 13, 16));
+        background: linear-gradient(180deg, rgb(24, 18, 29), rgb(16, 16, 33), rgb(17, 9, 23));
         min-height: 65vh;
         min-width: 90%;
         justify-items: center;
@@ -174,6 +181,7 @@ section.disco {
     & h2 {
         word-spacing: 4px;
         font-family: windsong;
+        font-weight: 500;
         font-size: 35px;
         color: rgb(211, 211, 233);
         text-align: center;
@@ -197,7 +205,7 @@ section.disco {
 
             &:hover {
                 cursor: pointer;
-                background-color: rgba(255, 255, 255, 0.839);
+                background-color: rgba(247, 238, 255, 0.744);
                 transform: scale(1.05);
                 color: rgb(7, 7, 16);
             }
@@ -207,7 +215,7 @@ section.disco {
             border-radius: 15px;
             border-right: 10px solid rgb(6, 1, 10);
             border-left: 10px solid rgb(6, 1, 10);
-            background: linear-gradient(to right, rgb(6, 1, 10), rgb(23, 21, 29), rgb(6, 1, 10));
+            background: linear-gradient(90deg, rgb(6, 1, 10), rgb(27, 22, 43), rgb(6, 1, 10));
             display: flex;
             overflow-x: auto;
             scroll-behavior: smooth;
@@ -247,9 +255,9 @@ section.disco {
                     & h3 {
                         margin-top: 5px;
                         text-align: center;
-                        font-family: rubik;
-                        font-size: 15px;
-                        font-weight: 520;
+                        font-family: Cormorant Infant;
+                        font-size: 18px;
+                        font-weight: 700;
                         color: rgb(223, 221, 255);
                     }
 
@@ -287,12 +295,12 @@ footer.footer {
             max-height: 100px;
 
             & h2 {
-                font-size: 30px;
+                font-size: 24px;
                 color: rgb(102, 127, 128);
             }
 
             & a {
-                font-size: 18px;
+                font-size: 15px;
                 text-decoration: none;
                 display: block;
                 color: rgb(247, 255, 252);
@@ -314,7 +322,7 @@ footer.footer {
             & h2 {
                 display: block;
                 color: rgb(91, 134, 135);
-                font-size: 38px;
+                font-size: 28px;
             }
 
             & input {
@@ -330,11 +338,10 @@ footer.footer {
             }
 
             & button {
-                font-family: rubik;
-                font-weight: 600;
+                font-weight: 500;
                 padding: 6px 15px;
                 border-radius: 10px;
-                border: 3px solid rgb(207, 205, 233);
+                border: 0;
                 background-color: rgb(22, 32, 91);
                 color: rgb(207, 205, 233);
                 font-size: 15px;
