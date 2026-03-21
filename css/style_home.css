@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Ballet:opsz@16..72&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=WindSong:wght@400;500&display=swap');
 
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -136,7 +146,7 @@ section.bio {
                 height: 50px;
                 width: 150px;
                 font-family: roboto slab;
-                background: linear-gradient(to bottom, rgb(149, 149, 189), rgb(211, 211, 233), rgb(149, 149, 189));
+                background: linear-gradient(to bottom, rgb(149, 149, 205), rgb(183, 183, 226), rgb(149, 149, 189));
                 border: 0;
                 border-radius: 15px;
                 color: rgb(13, 13, 13);
@@ -161,7 +171,7 @@ section.bio {
 section.disco {
     display: flex;
     min-height: 70vh;
-    background: linear-gradient(to bottom, rgb(2, 1, 6), rgb(16, 14, 22), rgb(2, 1, 6));
+    background: linear-gradient(to bottom, rgb(2, 1, 6), rgb(9, 9, 11), rgb(13, 10, 21), rgb(16, 14, 22), rgb(2, 1, 6));
     justify-items: center;
     align-items: center;
     padding: 30px;
@@ -171,7 +181,7 @@ section.disco {
         display: inline-flexbox;
         border-radius: 25px;
         padding: 20px;
-        background: linear-gradient(180deg, rgb(24, 18, 29), rgb(16, 16, 33), rgb(17, 9, 23));
+        background: linear-gradient(180deg, rgb(16, 14, 22), rgb(10, 7, 14), rgb(22, 18, 29));
         min-height: 65vh;
         min-width: 90%;
         justify-items: center;
@@ -196,7 +206,7 @@ section.disco {
         & button.btn {
             color: rgb(255, 255, 255);
             font-weight: bolder;
-            border: 3px solid rgb(7, 7, 16);
+            border: 3px solid rgba(247, 238, 255, 0.269);
             border-radius: 15px;
             background-color: rgb(7, 7, 16);
             padding: 55px 15px;
@@ -205,6 +215,7 @@ section.disco {
 
             &:hover {
                 cursor: pointer;
+                border: 3px solid rgba(247, 238, 255, 0.100);
                 background-color: rgba(247, 238, 255, 0.744);
                 transform: scale(1.05);
                 color: rgb(7, 7, 16);
@@ -272,6 +283,84 @@ section.disco {
                 }
 
 
+            }
+        }
+    }
+}
+
+section.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(2, 1, 6), rgb(9, 9, 11), rgb(13, 10, 21), rgb(16, 14, 22), rgb(2, 1, 6));
+
+    & span.fundo4 {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 85vh;
+        width: 97%;
+        background: linear-gradient(180deg, rgb(16, 14, 22), rgb(10, 7, 14), rgb(22, 18, 29));
+
+        & h2 {
+            word-spacing: 4px;
+            font-family: windsong;
+            font-weight: 500;
+            font-size: 35px;
+            color: rgb(211, 211, 233);
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        & div.slider {
+            border-right: 3px solid rgb(211, 211, 233);
+            border-left: 3px solid rgb(211, 211, 233);
+            background: linear-gradient(90deg, rgb(6, 1, 10), rgba(27, 22, 43, 0.254), rgb(6, 1, 10));
+            width: 90%;
+            display: flex;
+            overflow-x: auto;
+            height: 65vh;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            & div.slides {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                background-color: transparent;
+                animation: spin 18s infinite linear;
+                padding-right: 14px;
+
+                & div.slide {
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+
+                    & a {
+                        width: 100%;
+                        height: 100%;
+
+                        & img {
+                            transition: .2s ease;
+                            width: auto;
+                            height: 60vh;
+                            border: 3px solid transparent;
+
+                            &:hover {
+                                transform: scale(1.06);
+                                border: 3px solid white;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
